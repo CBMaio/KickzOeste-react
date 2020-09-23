@@ -24,7 +24,6 @@ export default NavbarNavegation;
 
 const StyledNavbar = styled(Navbar)`
     background: #f6f6f6;
-    font-family: 'Spartan', sans-serif;
 `;
 
 const StyleHomeButton = styled(Navbar.Brand) `{

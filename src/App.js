@@ -1,24 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
 import NavbarNavegation from './Components/NavbarNavegation';
-import PrincipalTitle from './Components/PrincipalTitle';
-import Button from './Components/Button'
+import PrincipalPage from './Components/PrincipalPage/principalPage';
 
 function App() {
   return (
-    <div>
+    <FontPage>
       <NavbarNavegation /> 
-      <PrincipalTitle />
-      <Button 
-        background = 'black'
-        letterColor = '#fff'
-      />
-      <Button 
-        background = 'white'
-        letterColor = 'black'
-      />
-    </div>
+      <PrincipalPage />
+    </FontPage>
   );
 }
 
 export default App;
 
+const FontPage = styled.div`{
+  font-family: 'Spartan', sans-serif;
+}`
