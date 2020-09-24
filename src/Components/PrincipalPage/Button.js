@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Button = (props) => {
 
-    const { background, letterColor, text } = props;
+    const { background, letterColor, text, icon } = props;
 
     return (
 
@@ -15,7 +15,9 @@ const Button = (props) => {
                     color: `${letterColor}`,
                 }}
 
-            href="#" className="btn btn-dark mb-4">{ text }</BtnStyle>
+            href="#" className="btn btn-dark mb-4">{ text }
+            { icon }
+             </BtnStyle>
         </div>
     );
 };
